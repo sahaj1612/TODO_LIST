@@ -1,0 +1,81 @@
+body{
+    text-align: center;
+    font-family:sans-serif;
+    background-color:lightyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#div{
+    width: 450px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-top: 20px;
+    background-color: #e6f7ff;
+    text-align: center;
+}
+
+.btn-add{
+    background-color: rgb(2, 255, 69);
+    border: 1px solid black;
+    height: 25px;
+    width: 50px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.btn-add:hover{
+    background-color:  rgb(4, 241, 158);
+
+}
+
+.btn-save{
+    background-color: rgb(2, 255, 69);
+    border: 1px solid black;
+    height: 25px;
+    width: 50px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.btn-save:hover{
+    background-color:  rgb(4, 241, 158);
+
+}
+
+.btn-edit{
+    background-color: rgb(2, 242, 255);
+    border: 1px solid black;
+    height: 25px;
+    width: 50px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.btn-edit:hover{
+    background-color:  rgb(5, 255, 238);
+}
+
+.btn-delete{
+    background-color: rgb(255, 2, 2);
+    border: 1px solid black;
+    height: 25px;
+    width: 50px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.btn-delete:hover{
+    background-color:  rgb(222, 3, 3);
+
+}
+
+.text{
+    border: 1px solid black;
+    width: 300px;
+    display: inline-block;
+    border-radius: 4px;
+    margin-left: 10px;
+}

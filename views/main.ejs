@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+
+        <h1>TO DO LIST</h1>
+
+            <form action="/" method="post" style="display: flex;">
+                <input type="text" name="task" class="text" placeholder="                              Enter the task" required>
+                <button class="btn-add">Add</button>
+            </form>
+
+        <h2>TASKS</h2>
+
+            <% for(post of posts){%>
+
+                <%if(edit == post.id){%>
+
+                    <form action="/<%= post.id %>?_method=PATCH" method="POST" style="display: flex;">
+                        <input type="text" name="task" class="text" value="<%= post.task %>" required>
+                        <button  class="btn-save">Save</button>
+                    </form>
+                    <br>
+
+                <%} else{ %>
+                    
+                    <div style="display: flex">
+                        <span class="text"><%= post.task %></span>
+                        <a href="/?edit=<%= post.id %>"><button class="btn-edit">Edit</button></a>
+                        <form action="/<%= post.id %>?_method=DELETE" method="POST">
+                            <button class="btn-delete">Delete</button>
+                        </form>
+                    </div>
+                    <br>
+
+                <%}%>
+            <%}%>
+    </div>
+</body>
+</html>
